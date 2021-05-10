@@ -2,27 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 :root {
-  /* --blue: #007bff;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #dc3545;
-  --orange: #f4623a;
-  --yellow: #ffc107;
-  --green: #28a745;
-  --teal: #20c997;
-  --cyan: #17a2b8;
-  --white: #fff;
-  --gray: #6c757d;
-  --gray-dark: #343a40;
-  --primary: #f4623a;
-  --secondary: #6c757d;
-  --success: #28a745;
-  --info: #17a2b8;
-  --warning: #ffc107;
-  --danger: #dc3545;
-  --light: #f8f9fa;
-  --dark: #343a40; */
+
+  /* My own Color palete that I tend to like/wear */
+  --wine: #722F37;
+  --dark-red: #860F09;
+  --chocolate: #7A4300;
+  --ivory: #FBFDEC;
+  --space-cadet-blue: #1B264F;
+
 
   /* These breakpoints are numbers gathers from bootstrap that will scale the site accordingly based on the viewing device. */
   --breakpoint-xs: 0;
@@ -32,6 +19,7 @@
   --breakpoint-xl: 1200px;
 }
 
+/* Allows content to be added without adding onto HTML doc*/ 
 *,
 *::before,
 *::after {
@@ -39,27 +27,30 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;  
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+/* If i were to add any of these classes into HTML it would automatically style it*/
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
 body {
+  /* I like no margins, it kinda flows better*/
   margin: 0;
   font-family: 'Montserrat', sans-serif;  
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: var(--space-cadet-blue);
   text-align: left;
-  background-color: #fff;
+  background-color: var(--ivory);
 }
 
+/*Orders the way items are tabbed on the page, like selecting stuff*/
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
@@ -149,8 +140,9 @@ sup {
   top: -0.5em;
 }
 
+/* What are these below?? */
 a {
-  color: #f4623a;
+  color: #a8a6a5;
   text-decoration: none;
   background-color: transparent;
 }
@@ -6097,7 +6089,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #f4623a !important;
+  background-color: var(--wine) !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -10132,6 +10124,8 @@ header.masthead h1 {
   position: relative;
   display: block;
 }
+
+/* The portfolio items themselves (boxes)*/ 
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption, #portfolio .container-sm .portfolio-box .portfolio-box-caption, #portfolio .container-md .portfolio-box .portfolio-box-caption, #portfolio .container-lg .portfolio-box .portfolio-box-caption, #portfolio .container-xl .portfolio-box .portfolio-box-caption {
   display: flex;
   align-items: center;
@@ -10144,7 +10138,7 @@ header.masthead h1 {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(244, 98, 58, 0.9);
+  background: rgba(114, 47, 55, 0.9);
   transition: opacity 0.25s ease;
   text-align: center;
 }
